@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao Jiang | Personal Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZfG8B+XzafLJYAvPSemNTU9z5GHEa1jphkbs8ybxSZ8OXh1vj+EmOKIm6t4hr9eL7+c5A3HDy1z3+DUjLx+AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            font-weight: 600;
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .bio-section {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .bio-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .bio-text {
+            flex: 1;
+        }
+        .bio-links {
+            margin-top: 20px;
+        }
+        .bio-links a {
+            margin: 0 15px;
+            color: #0071e3;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .bio-links a:hover {
+            color: #005bb5;
+        }
+        .section {
+            background: #fff;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e5e7;
+            padding-bottom: 10px;
+        }
+        .section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 15px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        ul li:before {
+            content: "•";
+            color: #0071e3;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .services-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* This will add space between the text and the map */
+        }
+        .services-text {
+            flex: 1;
+            margin-right: 20px; /* Adjusts the spacing between the text and the map */
+        }
+        .services-map {
+            width: 18%; /* Adjusts the width of the map container */
+        }
+        .services-map iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> ⭐ Welcome to Hao Jiang's Homepage</h1>
+    </header>
+    <div class="container">
+        <section class="bio-section">
+            <div class="bio-photo">
+                <img src="./asset/me.jpg" vspace="50 px" width="250 px" id="me" itemprop="photo">
+            </div>
+            <div class="bio-text">
+                <h2>🧑‍🎓 About Me</h2>
+                <p>
+                    Hi, I'm <b> Hao Jiang </b>.
+                    I received my B.S. degree in Electronic Information Science and Technology from Nankai University (<a href="https://en.nankai.edu.cn/">NKU</a>), China, in 2020. 
+                    After graduation, I continued to research telecommunications with <a href="https://en.nankai.edu.cn/">NKU</a> under the supervision of Prof. S. Han and Prof. G. Sun and received the M.Eng in 2023. 
+                    I am now working toward a Ph.D degree in Electrical Engineering at Queen Mary University of London (<a href="https://www.qmul.ac.uk/">QMUL</a>), U.K., advised by Prof. Y. Liu. 
+                    My research interests include near-field communications, beamforming techniques, machine learning, and spectrum sharing.
+                </p>
+                <div class="bio-links">
+                    <a href="https://orcid.org/0000-0002-9462-3430">[ORCID]</a>
+                    <a href="https://www.researchgate.net/profile/Hao-Jiang-161">[ResearchGate]</a>
+                    <a href="https://scholar.google.co.uk/citations?user=AjKYZ1kAAAAJ&hl=en">[Google Scholar]</a>
+                    <a href="https://github.com/Dr-Evil-Jiang">[GitHub]</a>
+
+                </div>
+            </div>
+        </section>
+        <section class="section" id="news">
+            <h2>📣 News</h2>
+            <ul class="news">
+                <li>[Jul. 2024] My home page is online!</li>
+            </ul>
+        </section>
+        <section class="section" id="publications">
+            <h2>📚 Publications</h2>
+            <h3>Preprint Manuscripts</h3>
+            <ul class="publications">
+                <!-- <li> Jiang, H. (2023). "Title of the Preprint". arXiv:1234.5678.</li> -->
+            </ul>
+            <h3>Journal Articles</h3>
+            <ul class="publications">
+                <li> <b>H. Jiang</b>, Z. Wang and Y. Liu, "Sense-Then-Train: An Active-Sensing-Based Beam Training Design for Near-Field MIMO Systems," , <i>IEEE Trans. Wireless Commun.</i>, early access. <a href="https://ieeexplore.ieee.org/document/10609801">[Paper]</a> </li> 
+                <li> <b>H. Jiang</b>, S. Han and G. Sun, "Fairness-Aware Intelligent Multi-BD Scheduling in Symbiotic Radio Networks Using Soft Actor-Critic," <i>IEEE Trans. Veh. Technol.</i>, vol. 73, no. 6, pp. 9125-9130, Jun. 2024. <a href="https://ieeexplore.ieee.org/document/10415568">[Paper]</a></li>
+                <li> <b>H. Jiang</b>, S. Han, G. Sun and Y. -C. Liang, "Contention or Symbiosis: The Model-Based and Model-Less Transmission Mode Selections for Internet of Things in Unlicensed Band," <i>IEEE Internet Things J.</i>, vol. 10, no. 7, pp. 6164-6181, 1 Apr., 2023. <a href="https://ieeexplore.ieee.org/document/9964069">[Paper]</a> </li>
+            </ul>
+            <h3>Conference Proceedings</h3>
+            <ul class="publications">
+                <li> <b>H. Jiang</b>, Z. Wang, Y. Liu, “Active-Sensing-Based Beam Alignment for Near Field MIMO Communications”, in <i>Proc. IEEE Int. Communications Conf. (ICC'24)</i>, Denver, CO, USA, Jun. 2024.</li>
+            </ul>
+        </section>
+        <section class="section" id="awards">
+            <h2>🏆 Awards</h2>
+            <ul class="awards">
+                <li>2023: Distinguished Graduate of Nankai Univerisity.</li>
+                <li>2020: Second-Grade Specialized Scholarship for
+                    Excellent Freshmen. </li>
+            </ul>
+        </section>
+        <section class="section services-section" id="services">
+            <div class="services-text">
+                <h2>💼 Services</h2>
+                <ul>
+                    <li>Reviewer of IEEE TCOM, JSTSP, TVT, JIOT, JCC, and ICC. </li>
+                </ul>
+            </div>
+            <div class="services-map">
+                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Exoc1Ds5r_4806EwvHvp5ymcZtU245khduGchmy_t-I"></script>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
