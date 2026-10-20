@@ -402,4 +402,47 @@ table#tlayout {
   
   .pub .entry p{
 	margin: 0;
-  }
+  }/* Preserve the original jemdoc typography while supporting narrow screens. */
+* { box-sizing: border-box; }
+body { color: #222; }
+table#tlayout { max-width: 1320px; margin: 0 auto; table-layout: fixed; }
+#layout-menu { width: 195px; min-height: 0; padding: 12px 14px; }
+#layout-content { padding: 12px 26px 36px; overflow-wrap: anywhere; }
+#layout-menu .menu-item { white-space: normal; }
+p, .pub { line-height: 1.5; }
+h1, h2, h3 { line-height: 1.2; }
+.profile-photo { width: 280px; max-width: 100%; height: auto; display: block; }
+.imgtable { width: 100%; }
+.imgtable td { vertical-align: top; }
+.imgtable td:first-child { width: 300px; }
+.pub { grid-template-columns: 3.8em minmax(0, 1fr); }
+.pub .entry { overflow-wrap: anywhere; }
+.pub a { font-weight: normal; }
+a:focus-visible { outline: 2px solid #224b8d; outline-offset: 3px; }
+.skip-link { position: absolute; top: -100px; left: 12px; z-index: 1; padding: 8px; background: white; }
+.skip-link:focus { top: 10px; }
+div#footer { color: #666; }
+div#footer a { color: #224b8d; }
+
+@media (max-width: 800px) {
+  table#tlayout, table#tlayout > tbody, table#tlayout > tbody > tr { display: block; width: 100%; }
+  table#tlayout { min-height: 0; }
+  #layout-menu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px 18px; width: 100%; white-space: normal; border-width: 0 0 1px; }
+  #layout-menu > br { display: none; }
+  #layout-menu .menu-category { grid-column: 1 / -1; margin-top: 8px; }
+  #layout-menu a { display: inline-block; margin-left: 0; padding: 6px 0; }
+  #layout-menu .menu-item { padding: 0; text-indent: 0; }
+  #layout-content { display: block; width: 100%; padding: 12px 18px 30px; }
+  .imgtable, .imgtable > tbody, .imgtable tr, .imgtable td { display: block; width: 100%; }
+  .imgtable td { padding: 0; }
+  .imgtable td:first-child { width: 100%; margin-bottom: 20px; }
+  .profile-photo { width: min(280px, 100%); }
+  .pub { grid-template-columns: 3em minmax(0, 1fr); gap: 0.6em; }
+}
+
+@media print {
+  table#tlayout { display: block; max-width: none; }
+  #layout-content { padding: 0; }
+  #layout-menu, .skip-link { display: none; }
+}
+
